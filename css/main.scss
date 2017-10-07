@@ -11,9 +11,9 @@
 $base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
 $secondary-font-family: "PT Serif", Georgia, serif;
 
-$base-font-size: 16px;
-$small-font-size: $base-font-size * 0.875; //14px
-$large-font-size: $base-font-size * 1.125; //18px
+$base-font-size: 1rem; //16px
+$base-font-size-small: $base-font-size * 0.875; //14px
+$base-font-size-large: $base-font-size * 1.125; //18px
 
 $base-font-weight: 400;
 
@@ -35,8 +35,8 @@ $gradient-pri: linear-gradient(-90deg, #8E44AD 0%, #34495E 100%);
 
 $background-color: $white;
 
-$pad-10: 10px;
-$mar-10: 10px;
+$pad: 0.625em; //10px
+$mar: 0.625em; //10px
 
 
 // Use media queries like this:
@@ -53,6 +53,22 @@ $mar-10: 10px;
 }
 
 
+@mixin bp($point) {
+	 @if $point == xl {
+		 @media screen and (min-width: 1200px) { @content ; }
+	}
+	 @else if $point == lg {
+		 @media screen and (min-width: 992px) { @content ; }
+	}
+		@else if $point == md {
+		 @media screen and (min-width: 768px) { @content ; }
+	}
+	 @else if $point == sm {
+		 @media screen and (min-width: 576px)  { @content ; }
+	}
+}
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
@@ -60,5 +76,5 @@ $mar-10: 10px;
         "syntax-highlighting",
         "boilerplate",
         "normalize",
-        "boostrap-grid.css",
+        "grid",
         "mystyle";

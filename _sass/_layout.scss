@@ -1,3 +1,117 @@
+.site-header {
+  background-color: $col-pri;
+
+  &__logo-container {
+
+    a {
+      text-decoration: none;
+    }
+
+    &__logo-wrapper--outer {
+      justify-content: center;
+      align-items: center;
+
+      @include bp(sm) {
+        justify-content: flex-start;
+      }
+    }
+
+    &__logo-wrapper--inner {
+
+      &__logo {
+        flex: 0 0 75px;
+        margin-right: $mar*1.5;
+
+        @include bp(sm) {
+          flex: 0 0 100px;
+        }
+      }
+
+      &__site-logo {
+        min-width: 100%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+
+        &:hover {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      &__text {
+
+        &__name {
+          color: $white;
+          font-size: $base-font-size-large;
+          margin-bottom: $mar*0.5;
+        }
+
+        &__description {
+          font-weight: 400;
+          font-size: $base-font-size-small;
+          font-family: $base-font-family;
+          font-style: italic;
+          color: $white;
+          opacity: 0.8;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__site-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include bp(sm) {
+      justify-content: flex-end;
+    }
+
+    &__list {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      font-family: $base-font-family;
+      font-size: $base-font-size;
+      justify-content: center;
+
+      @include bp(md) {
+        text-align: right;
+        justify-content: flex-end;
+        font-size: $base-font-size-large;
+      }
+
+      &__item {
+        margin-right: $mar*3;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include bp(sm) {
+          margin-right: 0;
+          margin-left: $mar*2; //20px
+        }
+
+        @include bp(md) {
+          margin-left: $mar*3; //30px
+        }
+
+        a {
+          color: $white;
+          text-decoration: none;
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
 
