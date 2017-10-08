@@ -34,9 +34,9 @@
         </div>
         <nav class="site-header__site-navigation col-12 col-sm-6">
           <ul class="site-header__site-navigation__list">
-            <li class="site-header__site-navigation__list__item"><a href="{{ site.baseurl}}/">Home</a></li>
-            <li class="site-header__site-navigation__list__item"><a href="{{ site.baseurl}}/portfolio">Portfolio</a></li>
-            <li class="site-header__site-navigation__list__item"><a href="{{ site.baseurl}}/contact">Contact me</a></li>
+            <li class="site-header__site-navigation__list__item" {% if page.url == '/index.html' %} class="site-header__site-navigation__list__item--active"{% endif %}><a href="{{ site.baseurl}}/">Home</a></li>
+            <li class="site-header__site-navigation__list__item" {% if page.url == '/portfolio.html' %} class="site-header__site-navigation__list__item--active"{% endif %}><a href="{{ site.baseurl}}/portfolio">Portfolio</a></li>
+            <li class="site-header__site-navigation__list__item" {% if page.url == '/contact.html' %} class="site-header__site-navigation__list__item--active"{% endif %}><a href="{{ site.baseurl}}/contact">Contact me</a></li>
           </ul>
         </nav>
       </div>
