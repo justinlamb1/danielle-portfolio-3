@@ -1,5 +1,23 @@
-.site-header {
+body {
   background-color: $col-pri;
+}
+
+.site-header__container {
+  position: relative;
+}
+
+.site-header {
+  margin-top: $mar;
+  display: flex;
+  width: 100%;
+
+  @include bp(sm) {
+    margin-top: $mar*2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
 
   &__logo-container {
 
@@ -31,6 +49,11 @@
         min-width: 100%;
         -webkit-transition: -webkit-transform .8s ease-in-out;
         transition: transform .8s ease-in-out;
+        width: 50px;
+
+        @include bp(sm) {
+          width: 75px;
+        }
 
         &:hover {
           -webkit-transform: rotate(360deg);
