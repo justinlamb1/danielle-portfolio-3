@@ -1,5 +1,5 @@
 body {
-  background-color: $col-pri;
+  // background-color: $col-pri;
 }
 
 .site-header__container {
@@ -10,13 +10,15 @@ body {
   margin-top: $mar;
   display: flex;
   width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  border-bottom: 1px solid #9765b7;
+  padding-bottom: $pad*2;
 
   @include bp(sm) {
     margin-top: $mar*2;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 50;
   }
 
   &__logo-container {
@@ -137,6 +139,113 @@ body {
       }
     }
   }
+}
+
+.heading-banner {
+  background: $gradient-pri;
+  padding-top: $pad*17;
+  padding-bottom: $pad*30;
+
+  @include bp(sm) {
+    padding-top: $pad*17;
+  }
+
+  &__heading {
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.3;
+    font-size: 1.5em;
+    margin-bottom: $mar*2;
+
+    @include bp(md) {
+      font-size: 1.875em;
+    }
+
+    @include bp(lg) {
+      max-width: 80%;
+      font-size: 2.25em;
+    }
+  }
+
+  &__about-link {
+    color: $white;
+    text-decoration: none;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &__text {
+      margin-right: $mar;
+    }
+  }
+}
+
+.white-overlay {
+  transform: skewY(-5deg);
+  transform-origin: 0;
+  display: inline-block;
+  height: 800px;
+  width: 100%;
+  background-color: $white;
+  margin-top: -$mar*20;
+
+  @include bp(sm) {
+    margin-top: -$mar*15;
+  }
+}
+
+.featured-work {
+  position: relative;
+  top: -800px;
+  margin-top: $mar*2;
+
+  @include bp(md) {
+    margin-top: $mar*4;
+  }
+
+  &__item {
+    margin-bottom: $mar*5;
+    border-bottom: 2px solid $col-pri-medium;
+    padding-bottom: $pad*2;
+
+    @include bp(md) {
+      margin-bottom: $mar*10;
+      border-bottom: none;
+      padding-bottom: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      @include bp(sm) {
+        font-size: 1.875em;
+      }
+
+      a {
+        text-decoration: none;
+        color: $col-pri;
+
+        &:hover {
+          color: $col-pri-light-20;
+        }
+      }
+    }
+  }
+}
+
+.button-wrapper--center {
+  text-align: center;
 }
 
 

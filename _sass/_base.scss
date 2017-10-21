@@ -11,6 +11,42 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: $pad*1.5 $pad*2;
+  border-radius: 5px;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  text-decoration: none;
+  box-shadow: 0 2px 5px 0 rgba(86,27,111,0.25);
+  position: relative;
+  transition: all .15s ease;
+
+  &:hover {
+    box-shadow: 0 5px 15px 0 rgba(86,27,111,0.25);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(1px);
+  }
+}
+
+.button-primary {
+  background-color: $col-pri;
+  color: $white;
+  transition: all .15s ease;
+
+  &:hover {
+    background-color: lighten($col-pri, 5%);
+  }
+
+  &:active {
+    background-color: darken($col-pri, 5%);
+  }
+}
 
 
 
