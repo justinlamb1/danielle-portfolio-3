@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: $base-font-size;
   text-decoration: none;
   box-shadow: 0 2px 5px 0 rgba(86,27,111,0.25);
-  position: relative;
   transition: all .15s ease;
 
   &:hover {
