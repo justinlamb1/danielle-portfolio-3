@@ -1,3 +1,5 @@
+// Navigation
+
 .site-header__container {
   position: relative;
 }
@@ -137,6 +139,23 @@
   }
 }
 
+.white-overlay {
+  transform: skewY(-5deg);
+  transform-origin: 0;
+  display: inline-block;
+  height: 800px;
+  width: 100%;
+  background-color: $white;
+  margin-top: -$mar*20;
+
+  @include bp(sm) {
+    margin-top: -$mar*15;
+  }
+}
+
+
+// Home
+
 .heading-banner {
   background: $gradient-pri;
   padding-top: $pad*17;
@@ -178,20 +197,6 @@
     &__text {
       margin-right: $mar;
     }
-  }
-}
-
-.white-overlay {
-  transform: skewY(-5deg);
-  transform-origin: 0;
-  display: inline-block;
-  height: 800px;
-  width: 100%;
-  background-color: $white;
-  margin-top: -$mar*20;
-
-  @include bp(sm) {
-    margin-top: -$mar*15;
   }
 }
 
@@ -245,7 +250,11 @@
 }
 
 
+// Footer
+
 .site-footer {
+  position: relative;
+  z-index: 20;
 
   &__contact-info {
     background-color: #EBF1FF;
@@ -265,6 +274,7 @@
       margin-right: auto;
       margin-bottom: $mar*2;
       font-size: 1.25em;
+      line-height: 1.3;
 
       @include bp(md) {
         font-size: 1.5em;
@@ -301,12 +311,26 @@
       padding-bottom: $pad*8;
     }
 
+    h2 {
+      &::after {
+        content: ' ';
+        height: 1px;
+        width: 50px;
+        background-color: lighten($col-pri, 5%);
+        display: block;
+        margin: $mar auto;
+        margin-bottom: $mar*2;
+      }
+    }
+
     ul {
       padding-left: 0;
+      margin-bottom: $mar*5;
 
       li {
         list-style: none;
         margin-bottom: $mar*2;
+        line-height: 1.5;
 
         a {
           color: $white;
@@ -325,6 +349,121 @@
           }
         }
       }
+    }
+
+    &__copyright {
+      color: #B2B1E0;
+      font-size: 0.875em;
+    }
+  }
+}
+
+
+// Case studies
+
+.casestudy {
+
+  &__header {
+    background: $gradient-pri;
+    padding-top: $pad*17;
+    padding-bottom: $pad*40;
+
+    @include bp(sm) {
+      padding-top: $pad*17;
+    }
+
+    &__heading {
+      color: $white;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  &__content {
+    margin-top: -$mar*100;
+    margin-bottom: $mar*5;
+
+    @include bp(sm) {
+      margin-top: -$mar*102;
+    }
+
+    @include bp(md) {
+      margin-top: -$mar*103;
+      margin-bottom: $mar*10;
+    }
+
+    img {
+      width: 100%;
+      box-shadow: 0 2px 25px 0 rgba(0,0,0,0.25);
+      margin-bottom: $mar*2;
+      margin-top: $mar*2;
+
+      @include bp (md) {
+        margin-bottom: $mar*4;
+        margin-top: $mar*4;
+      }
+    }
+
+    &__hero-image {
+      margin-top: 0 !important;
+    }
+
+    &__inner-wrapper {
+
+      &--narrow {
+        max-width: 43.75em;
+        margin: 0 auto;
+      }
+
+      &--wide {
+        max-width: 53.125em;
+        margin: 0 auto;
+      }
+    }
+
+    p {
+      @include bp(md) {
+        font-size: 1.125em;
+      }
+    }
+
+    .client-testimonial {
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: $mar*5;
+      margin-top: $mar*5;
+
+      @include bp (md) {
+        margin-bottom: $mar*8;
+        margin-top: $mar*8;
+      }
+
+      &__quote {
+        font-size: 1.125em;
+        font-family: $secondary-font-family;
+        color: $col-pri;
+
+        @include bp (md) {
+          font-size: 1.375em;
+        }
+      }
+
+      &__cite {
+        font-weight: 700;
+        font-size: 1em;
+        font-style: italic;
+        color: $col-pri;
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .button {
+      margin-top: $mar*4;
     }
   }
 }
