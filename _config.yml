@@ -11,7 +11,7 @@ email: danielle.lamb.design@icloud.com
 description: > # this means to ignore newlines until "baseurl:"
   Hello, I’m a Graphic Designer with over 6 years experience, working across Leicestershire, Nottinghamshire and Cambridgeshire, specialising in print design and art direction.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://daniellelamb.co.uk" # the base hostname & protocol for your site
+url: "https://justinlamb1.github.io/danielle-portfolio-3" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
