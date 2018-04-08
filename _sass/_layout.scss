@@ -264,7 +264,7 @@
     font-size: 0.8rem;
     color: $col-pri
     -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     @include bp(md) {
       font-size: 1.5rem;
