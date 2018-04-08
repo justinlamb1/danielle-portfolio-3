@@ -268,7 +268,7 @@
   }
 
   h3 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: $col-pri;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -286,6 +286,8 @@
     font-size: 1.125rem;
     font-family: $base-font-family;
     font-weight: 400;
+    display: block;
+    margin-bottom: $mar;
   }
 
   &__copyright {
