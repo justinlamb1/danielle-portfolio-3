@@ -11,6 +11,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
+a {
+  text-decoration: none;
+  color: $col-pri;
+
+  &:hover {
+    color: lighten($col-pri, 5%);
+  }
+
+  &:active {
+    color: darken($col-pri, 5%);
+  }
+}
+
 .button {
   display: inline-block;
   text-align: center;
@@ -47,18 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-a {
-  text-decoration: none;
-  color: $col-pri;
 
-  &:hover {
-    color: lighten($col-pri, 5%);
-  }
-
-  &:active {
-    color: darken($col-pri, 5%);
-  }
-}
 
 
 

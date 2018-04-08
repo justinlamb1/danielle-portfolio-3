@@ -273,8 +273,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    @include bp(md) {
-      font-size: 1.5rem;
+    @include bp(sm) {
+      font-size: 1.875rem;
     }
   }
 
