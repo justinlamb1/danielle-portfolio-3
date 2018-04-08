@@ -16,11 +16,11 @@ a {
   color: $col-pri;
 
   &:hover {
-    color: lighten($col-pri, 5%);
+    color: lighten($col-pri, 15%);
   }
 
   &:active {
-    color: darken($col-pri, 5%);
+    color: darken($col-pri, 15%);
   }
 }
 
