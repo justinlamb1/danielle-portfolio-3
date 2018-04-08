@@ -252,14 +252,41 @@
 
 // Footer
 
-footer {
+.footer {
   position: relative;
   z-index: 20;
+
+  &-background {
+    background-color: $grey-extra-light;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    color: $col-pri
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+
+    @include bp(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    max-width: 360px;
+  }
+
+  &__contact-link {
+    font-size: 1.125rem;
+    font-family: $secondary-font-family;
+    font-weight: 400;
+  }
+
+  &__copyright {
+    text-align: center;
+    color: #a5a5a5;
+  }
 }
 
-.footer-background {
-  background-color: $grey-light;
-}
 
 .site-footer {
   position: relative;
