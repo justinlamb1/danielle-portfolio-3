@@ -258,10 +258,17 @@
 
   &-background {
     background-color: $grey-extra-light;
+    padding-top: $pad*4;
+    padding-bottom: $pad*4;
+
+    @include bp(md) {
+      padding-top: $pad*5;
+      padding-bottom: $pad*4;
+    }
   }
 
   h3 {
-    font-size: 0.8rem;
+    font-size: 1.125rem;
     color: $col-pri;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -277,7 +284,7 @@
 
   &__contact-link {
     font-size: 1.125rem;
-    font-family: $secondary-font-family;
+    font-family: $base-font-family;
     font-weight: 400;
   }
 
