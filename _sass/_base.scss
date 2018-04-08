@@ -53,10 +53,12 @@ a {
 
   &:hover {
     background-color: lighten($col-pri, 5%);
+    color: $white;
   }
 
   &:active {
     background-color: darken($col-pri, 5%);
+    color: $white;
   }
 }
 

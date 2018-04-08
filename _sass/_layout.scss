@@ -293,6 +293,11 @@
   &__copyright {
     text-align: center;
     color: #a5a5a5;
+    margin-top: $mar*4;
+
+    @include bp(sm) {
+      margin-top: $mar*7;
+    }
   }
 }
 
