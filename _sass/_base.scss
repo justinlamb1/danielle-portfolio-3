@@ -64,15 +64,15 @@ a {
 
 .image-show-small {
   @include bp(md) {
-    display: none;
+    display: none !important;
   }
 }
 
 .image-show-large {
-  display: none;
+  display: none !important;
 
   @include bp(md) {
-    display: block;
+    display: block !important;
   }
 }
 
