@@ -286,8 +286,12 @@
     font-size: 1.125rem;
     font-family: $base-font-family;
     font-weight: 400;
-    display: block;
+    display: inline-block;
     margin-bottom: $mar;
+
+    &:first-child {
+      margin-right: $mar*2;
+    }
   }
 
   &__copyright {
