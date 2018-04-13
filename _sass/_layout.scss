@@ -288,10 +288,7 @@
     font-weight: 400;
     display: inline-block;
     margin-bottom: $mar;
-
-    &:first-child {
-      margin-right: $mar*2;
-    }
+    margin-right: $mar*2;
   }
 
   &__copyright {
