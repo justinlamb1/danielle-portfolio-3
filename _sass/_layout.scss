@@ -493,7 +493,7 @@
       background-size: cover;
 
       @include bp(md) {
-        height: 450px;
+        height: 500px;
       }
     }
 
@@ -564,4 +564,19 @@
       margin-top: $mar*4;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+// Case studies
+
+.full-width-image-test {
+  background: url('images/hero-image-test.jpg') no-repeat;
+  background-size: cover;
 }
