@@ -428,6 +428,7 @@
       text-align: center;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      margin-bottom: 15px;
 
       @include bp (md) {
         font-size: 3em;
@@ -439,9 +440,11 @@
       text-align: center;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      font-size: 1.125em;
+      margin-top: 15px;
 
       @include bp (md) {
-        font-size: 2.25em;
+        font-size: 1.5em;
       }
     }
   }
@@ -472,8 +475,8 @@
     }
 
     &__row {
-      margin-top: $mar*2;
-      margin-bottom: $mar*2;
+      margin-top: $mar;
+      margin-bottom: $mar;
 
       @include bp(md) {
         margin-top: $mar*3;
@@ -507,6 +510,11 @@
       margin-top: $mar*2;
 
       @include bp(md) {
+        font-size: 1.875em;
+        margin-top: $mar;
+      }
+
+      @include bp(lg) {
         font-size: 2.25em;
         margin-top: $mar*3;
       }
