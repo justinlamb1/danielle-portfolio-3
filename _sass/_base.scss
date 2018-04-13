@@ -62,6 +62,19 @@ a {
   }
 }
 
+.image-show-small {
+  @include bp(md) {
+    display: none;
+  }
+}
+
+.image-show-large {
+  display: none;
+
+  @include bp(md) {
+    display: block;
+  }
+}
 
 
 
