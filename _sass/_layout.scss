@@ -471,6 +471,21 @@
       margin-bottom: $mar*3;
     }
 
+    &__row {
+      margin-top: $mar*2;
+      margin-bottom: $mar*2;
+
+      @include bp(md) {
+        margin-top: $mar*3;
+        margin-bottom: $mar*3;
+      }
+
+      @include bp(lg) {
+        margin-top: $mar*5;
+        margin-bottom: $mar*5;
+      }
+    }
+
     &__image--full-width {
       height: 300px;
       background-size: cover;
