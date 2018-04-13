@@ -480,7 +480,14 @@
       box-shadow: 0 2px 25px 0 rgba(0,0,0,0.25);
     }
 
-    &
+    &__image--full-width {
+      height: 300px;
+      background-size: cover;
+
+      @include bp(md) {
+        height: 450px;
+      }
+    }
 
     p {
       @include bp(md) {
