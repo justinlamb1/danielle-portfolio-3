@@ -462,11 +462,6 @@
     img {
       width: 100%;
       display: block;
-
-      @include bp (md) {
-        margin-bottom: $mar*7;
-        margin-top: $mar*7;
-      }
     }
 
     &__hero-image {
