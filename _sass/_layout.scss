@@ -430,7 +430,7 @@
       -moz-osx-font-smoothing: grayscale;
 
       @include bp (md) {
-        font-size: 2.25em;
+        font-size: 3em;
       }
     }
 
@@ -441,7 +441,7 @@
       -moz-osx-font-smoothing: grayscale;
 
       @include bp (md) {
-        font-size: 1.875em;
+        font-size: 2.25em;
       }
     }
   }
@@ -498,6 +498,17 @@
     p {
       @include bp(md) {
         font-size: 1.125em;
+      }
+    }
+
+    h3 {
+      font-size: 1.5em;
+      color: $col-pri;
+      margin-top: $mar*2;
+
+      @include bp(md) {
+        font-size: 2.25em;
+        margin-top: $mar*3;
       }
     }
 
