@@ -66,30 +66,6 @@ a {
   }
 }
 
-.image-show-small {
-  @include bp(md) {
-    display: none !important;
-  }
-}
-
-.image-show-large {
-  display: none !important;
-
-  @include bp(md) {
-    display: block !important;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 // /**
 //  * Reset some basic elements
